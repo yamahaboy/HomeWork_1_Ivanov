@@ -6,9 +6,8 @@ let age = prompt("Введите ваш возраст в годах:");
 
 let isMale = confirm("Ваш пол - мужской?");
 
-let fullName = lastName + " " + firstName + " " + patronymic;
 let ageInDays = age * 365;
-let futureAge = parseInt(age) + 5; // if without parseInt will be string + number
+let futureAge = +age + 5;
 
 let gender = isMale ? "мужской" : "женский";
 
@@ -33,7 +32,11 @@ let isRetired = age >= retirementAge ? "да" : "нет";
 
 alert(
   "Ваше ФИО: " +
-    fullName +
+    lastName +
+    " " +
+    firstName +
+    " " +
+    patronymic +
     "\nВаш возраст в годах: " +
     age +
     "\nВаш возраст в днях: " +
