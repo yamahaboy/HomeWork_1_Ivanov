@@ -2,6 +2,7 @@ let lastName = prompt("Введите вашу фамилию:");
 let firstName = prompt("Введите ваше имя:");
 let patronymic = prompt("Введите ваше отчество:");
 
+let fullName = lastName + " " + firstName + " " + patronymic;
 let age = prompt("Введите ваш возраст в годах:");
 
 let isMale = confirm("Ваш пол - мужской?");
@@ -32,11 +33,7 @@ let isRetired = age >= retirementAge ? "да" : "нет";
 
 alert(
   "Ваше ФИО: " +
-    lastName +
-    " " +
-    firstName +
-    " " +
-    patronymic +
+    fullName +
     "\nВаш возраст в годах: " +
     age +
     "\nВаш возраст в днях: " +
