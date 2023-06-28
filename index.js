@@ -31,17 +31,25 @@ let isRetired = age >= retirementAge ? "да" : "нет";
 //   isRetired = "нет";
 // }
 
-alert(
-  "Ваше ФИО: " +
-    fullName +
-    "\nВаш возраст в годах: " +
-    age +
-    "\nВаш возраст в днях: " +
-    ageInDays +
-    "\nЧерез 5 лет вам будет: " +
-    futureAge +
-    "\nВаш пол: " +
-    gender +
-    "\nВы на пенсии: " +
-    isRetired
-);
+// alert(
+//   "Ваше ФИО: " +
+//     fullName +
+//     "\nВаш возраст в годах: " +
+//     age +
+//     "\nВаш возраст в днях: " +
+//     ageInDays +
+//     "\nЧерез 5 лет вам будет: " +
+//     futureAge +
+//     "\nВаш пол: " +
+//     gender +
+//     "\nВы на пенсии: " +
+//     isRetired
+// );
+alert(`
+  Ваше ФИО: ${fullName}
+  Ваш возраст в годах: ${age}
+  Ваш возраст в днях: ${ageInDays}
+  Через 5 лет вам будет: ${futureAge}
+  Ваш пол: ${gender}
+  Вы на пенсии: ${isRetired}
+  `);
